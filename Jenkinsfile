@@ -11,5 +11,11 @@ pipeline {
                 echo "Build two"
                 }
             }
+            stage ('three') {
+                steps {
+                    input ("shall proceed")
+                }
+                
+            }
         }
 }
